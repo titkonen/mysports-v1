@@ -11,7 +11,7 @@ struct SportCell: View {
   var body: some View {
     VStack(alignment: .leading) {
       sports.sportTitle.map(Text.init)
-        .font(.title)
+        .font(.headline)
       HStack {
         sports.sportGenre.map(Text.init)
           .font(.caption)
