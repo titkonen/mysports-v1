@@ -11,7 +11,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   ) {
     //let contentView = MovieList()
     let context = persistentContainer.viewContext
-    let contentView = SportList().environment(\.managedObjectContext, context)
+//    let contentView = SportList().environment(\.managedObjectContext, context)
+    let contentView = TabBarView().environment(\.managedObjectContext, context)
 
 
     if let windowScene = scene as? UIWindowScene {
