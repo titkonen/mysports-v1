@@ -10,13 +10,14 @@ struct SportCell: View {
 
   var body: some View {
     VStack(alignment: .leading) {
-      sports.sportTitle.map(Text.init)
-        .font(.headline)
+      sports.sportDate.map { Text(Self.releaseFormatter.string(from: $0)) }
+        .font(.caption)
+      Spacer()
       HStack {
-        sports.sportGenre.map(Text.init)
-          .font(.caption)
+        sports.sportTitle.map(Text.init)
+          .font(.headline)
         Spacer()
-        sports.sportDate.map { Text(Self.releaseFormatter.string(from: $0)) }
+        sports.sportGenre.map(Text.init)
           .font(.caption)
       }
     }
