@@ -27,9 +27,11 @@ struct AddSport: View {
           Button(action: addMoveAction) {
             Text("Save Sport")
           }
+          .buttonStyle(RoundedRectangleButtonStyle())
         }
       }
       .navigationBarTitle(Text("Mark Your Sport"), displayMode: .inline)
+
     }
   }
 
