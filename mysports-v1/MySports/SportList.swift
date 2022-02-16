@@ -2,7 +2,7 @@ import SwiftUI
 
 struct SportList: View {
   @FetchRequest(entity: Sports.entity(),
-                sortDescriptors: [NSSortDescriptor(keyPath: \Sports.sportTitle, ascending: true)] ) var sports: FetchedResults<Sports>
+                sortDescriptors: [NSSortDescriptor(keyPath: \Sports.sportDate, ascending: true)] ) var sports: FetchedResults<Sports>
 
   @Environment(\.managedObjectContext) var managedObjectContext
   @State var isPresented = false
