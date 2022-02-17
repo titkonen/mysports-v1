@@ -4,10 +4,19 @@ struct TrackView: View {
     var body: some View {
       VStack {
         Text("00:00")
-        Button(action: startTracking) {
-          Text("Start")
+          .font(.largeTitle)
+          .fontWeight(.bold)
+        HStack {
+          Button(action: stopTracking) {
+            Text("STOP")
+          }
+          .buttonStyle(RoundedButtonRed())
+          Button(action: startTracking) {
+            Text("START")
+          }
+          .buttonStyle(RoundedButtonGreen())
         }
-        .buttonStyle(RoundedRectangleButtonStyle())
+        .padding()
       }
 
     }
@@ -15,6 +24,12 @@ struct TrackView: View {
   private func startTracking() {
     print("Start tracking pressed")
   }
+  
+  private func stopTracking() {
+    print("Stop tracking pressed")
+  }
+
+  
 }
 
 struct TrackView_Previews: PreviewProvider {
