@@ -3,11 +3,13 @@ import SwiftUI
 struct AddSport: View {
   static let DefaultSportTitle = "Regular running route 10km"
   static let DefaultSportGenre = "Running"
+  static let DefaultSportTime = "45min"
 
   @State var sportTitle = ""
   @State var sportGenre = ""
   @State var sportDate = Date()
-  let onComplete: (String, String, Date) -> Void
+  @State var sportTime = ""
+  let onComplete: (String, String, String, Date ) -> Void
 
   var body: some View {
     NavigationView {
@@ -17,6 +19,9 @@ struct AddSport: View {
         }
         Section(header: Text("Sport Genre: Ski, run etc.")) {
           TextField("Add Genre", text: $sportGenre)
+        }
+        Section(header: Text("Sport duration")) {
+          TextField("Ex. 45min", text: $sportTime)
         }
         Section {
           DatePicker(
@@ -39,6 +44,7 @@ struct AddSport: View {
     onComplete(
       sportTitle.isEmpty ? AddSport.DefaultSportTitle : sportTitle,
       sportGenre.isEmpty ? AddSport.DefaultSportGenre : sportGenre,
+      sportTime.isEmpty ? AddSport.DefaultSportTime : sportTime,
       sportDate)
   }
 }

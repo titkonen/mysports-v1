@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F3F44B327BE1DE000B1E44B /* SportsData 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SportsData 2.xcdatamodel"; sourceTree = "<group>"; };
 		0F771D8927BCD09B00187796 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		0F771D8E27BCD5E800187796 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		0F771D9027BD16A600187796 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -406,9 +407,10 @@
 		0F9C42A027BBC0EB00D5DE06 /* SportsData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				0F3F44B327BE1DE000B1E44B /* SportsData 2.xcdatamodel */,
 				0F9C42A127BBC0EB00D5DE06 /* SportsData.xcdatamodel */,
 			);
-			currentVersion = 0F9C42A127BBC0EB00D5DE06 /* SportsData.xcdatamodel */;
+			currentVersion = 0F3F44B327BE1DE000B1E44B /* SportsData 2.xcdatamodel */;
 			path = SportsData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

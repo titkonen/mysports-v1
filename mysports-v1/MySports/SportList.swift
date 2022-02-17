@@ -16,8 +16,8 @@ struct SportList: View {
         .onDelete(perform: deleteMovie)
       }
       .sheet(isPresented: $isPresented) {
-        AddSport { sportTitle, sportGenre, sportDate in
-          self.addMovie(sportTitle: sportTitle, sportGenre: sportGenre, sportDate: sportDate)
+        AddSport { sportTitle, sportGenre, sportTime, sportDate in
+          self.addMovie(sportTitle: sportTitle, sportGenre: sportGenre, sportTime: sportTime, sportDate: sportDate)
           self.isPresented = false
         }
       }
@@ -38,10 +38,11 @@ struct SportList: View {
     saveContext()
   }
 
-  func addMovie(sportTitle: String, sportGenre: String, sportDate: Date) {
+  func addMovie(sportTitle: String, sportGenre: String, sportTime: String, sportDate: Date) {
     let newMovie = Sports(context: managedObjectContext)
     newMovie.sportTitle = sportTitle
     newMovie.sportGenre = sportGenre
+    newMovie.sportTime = sportTime
     newMovie.sportDate = sportDate
     saveContext()
   }
