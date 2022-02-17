@@ -3,6 +3,15 @@ import SwiftUI
 struct TabBarView: View {
     var body: some View {
       TabView {
+        TrackView()
+          .tabItem({
+            VStack {
+              Image(systemName: "location.north.fill")
+              Text("Track")
+            }
+          })
+          .tag(0)
+        
         SportList()
           .tabItem({
             VStack {

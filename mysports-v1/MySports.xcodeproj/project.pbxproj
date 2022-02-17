@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3F44B527BE286D00B1E44B /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3F44B427BE286D00B1E44B /* TrackView.swift */; };
 		0F771D8A27BCD09B00187796 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F771D8927BCD09B00187796 /* Buttons.swift */; };
 		0F771D8F27BCD5E800187796 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F771D8E27BCD5E800187796 /* TabBarView.swift */; };
 		0F771D9127BD16A600187796 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F771D9027BD16A600187796 /* SettingsView.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		0F3F44B327BE1DE000B1E44B /* SportsData 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SportsData 2.xcdatamodel"; sourceTree = "<group>"; };
+		0F3F44B427BE286D00B1E44B /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
 		0F771D8927BCD09B00187796 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		0F771D8E27BCD5E800187796 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		0F771D9027BD16A600187796 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -82,7 +84,9 @@
 			children = (
 				95710F7C240A889600911BD1 /* AddSport.swift */,
 				95710F7E240A889600911BD1 /* SportList.swift */,
+				0F3F44B427BE286D00B1E44B /* TrackView.swift */,
 				95710F7B240A889600911BD1 /* SportCell.swift */,
+				0F771D9027BD16A600187796 /* SettingsView.swift */,
 				95710F64240A87F700911BD1 /* AppDelegate.swift */,
 				95710F66240A87F700911BD1 /* SceneDelegate.swift */,
 				95710F87240A88B300911BD1 /* LaunchScreen.storyboard */,
@@ -91,7 +95,6 @@
 				95710F6F240A87FA00911BD1 /* Preview Content */,
 				0F9C42A027BBC0EB00D5DE06 /* SportsData.xcdatamodeld */,
 				0F771D8B27BCD0F400187796 /* Components */,
-				0F771D9027BD16A600187796 /* SettingsView.swift */,
 			);
 			path = MySports;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			files = (
 				0F771D8A27BCD09B00187796 /* Buttons.swift in Sources */,
 				95710F83240A889600911BD1 /* SportList.swift in Sources */,
+				0F3F44B527BE286D00B1E44B /* TrackView.swift in Sources */,
 				95710F80240A889600911BD1 /* SportCell.swift in Sources */,
 				0F771D9127BD16A600187796 /* SettingsView.swift in Sources */,
 				0F771D8F27BCD5E800187796 /* TabBarView.swift in Sources */,
