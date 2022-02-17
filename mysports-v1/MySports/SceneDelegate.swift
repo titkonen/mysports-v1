@@ -4,6 +4,8 @@ import CoreData
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   var window: UIWindow?
 
+  @AppStorage("appearance") var appearance: Appearance = .dark
+  
   func scene(
     _ scene: UIScene,
     willConnectTo session: UISceneSession,

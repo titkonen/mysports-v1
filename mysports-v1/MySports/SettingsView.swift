@@ -4,7 +4,8 @@ struct SettingsView: View {
   // MARK: Properties
   @State var dailyReminderEnabled = false
   @State var dailyReminderTime = Date(timeIntervalSince1970: 0)
-
+  //@State var appearance: Appearance = .automatic
+  @AppStorage("appearance") var appearance: Appearance = .automatic
   
   // MARK: View
     var body: some View {
@@ -13,8 +14,13 @@ struct SettingsView: View {
           .font(.largeTitle)
           .padding(.bottom, 8)
         Section(header: Text("Appearance")) {
-          
-          
+          VStack(alignment: .leading) {
+            Picker("", selection: $appearance) {
+              ForEach(Appearance.allCases) { appearance in
+                Text(appearance.name).tag(appearance)
+              }          }
+            .pickerStyle(SegmentedPickerStyle())
+          }
         }
 
 

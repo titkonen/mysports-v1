@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct TabBarView: View {
+  @AppStorage("appearance") var appearance: Appearance = .automatic
+  
     var body: some View {
       TabView {
         TrackView()
@@ -11,6 +13,7 @@ struct TabBarView: View {
             }
           })
           .tag(0)
+          .preferredColorScheme(appearance.getColorScheme())
         
         SportList()
           .tabItem({
