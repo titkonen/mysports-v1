@@ -6,7 +6,7 @@ struct TabBarView: View {
         SportList()
           .tabItem({
             VStack {
-              Image(systemName: "gear")
+              Image(systemName: "list.bullet")
               Text("My Sports")
             }
           })
@@ -21,7 +21,7 @@ struct TabBarView: View {
             })
             .tag(2)
       }
-      .accentColor(.purple)
+      .accentColor(.blue)
 
     }
 }
