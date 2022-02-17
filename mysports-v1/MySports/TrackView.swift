@@ -8,8 +8,6 @@ struct TrackView: View {
   @State private var timerString = "0.00"
   @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
   
-  
-  
   // MARK: View
     var body: some View {
       VStack {
